@@ -13,19 +13,23 @@
   </header>
 
   <div class="container">
-    <input type="text" name="searchQuery" placeholder="Enter query here."/>
-    <select>
-        <!-- ID,Description,lastSold,ShelfLife,Department, Price ,Unit,xFor, Cost -->
-      <option>ID</option>
-      <option>Description</option>
-      <option>Last Sold</option>
-      <option>Shelf Life</option>
-      <option>Department</option>
-      <option>Price</option>
-      <option>Unit</option>
-      <option>xFor</option>
-      <option>Cost</option>
-    </select>
+    <div class="controls">
+      <input type="text" name="searchQuery" placeholder="Enter query here."/>
+      <select>
+        <option>ID</option>
+        <option>Description</option>
+        <option>Last Sold</option>
+        <option>Shelf Life</option>
+        <option>Department</option>
+        <option>Price</option>
+        <option>Unit</option>
+        <option>xFor</option>
+        <option>Cost</option>
+      </select>
+      <button name="searchBtn">Search</button>
+    </div>
+    
+    <div class="results"></div>
   </div>
 
   <footer>
