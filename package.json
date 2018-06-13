@@ -1,0 +1,15 @@
+{
+  "name": "eta-product-search",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adan Rodriguez",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.0.10"
+  }
+}
