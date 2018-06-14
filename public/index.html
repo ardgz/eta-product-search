@@ -14,99 +14,29 @@
 
   <div class="container">
     <div class="controls">
-      <input type="text" name="searchQuery" placeholder="Enter query here."/>
-      <select>
-        <option value="id">ID</option>
-        <option value="description">Description</option>
+      <input type="text" id="searchQuery" name="searchQuery" placeholder="Enter query here."/>
+      <select id="criteria">
+        <option value="ID">ID</option>
+        <option value="Description">Description</option>
         <option value="lastSold">Last Sold</option>
-        <option value="shelfLife">Shelf Life</option>
-        <option value="department">Department</option>
-        <option value="price">Price</option>
-        <option value="unit">Unit</option>
+        <option value="ShelfLife">Shelf Life</option>
+        <option value="Department">Department</option>
+        <option value="Price">Price</option>
+        <option value="Unit">Unit</option>
         <option value="xFor">xFor</option>
-        <option value="cost">Cost</option>
+        <option value="Cost">Cost</option>
       </select>
-      <button name="searchBtn">Search</button>
+      <button id="searchBtn" name="searchBtn">Search</button>
     </div>
     
-    <div class="results">
-      <table>
-        <thead>
-        <tr>
-          <th>ID</th>
-          <th>Description</th>
-          <th>Last Sold</th>
-          <th>Shelf Life</th>
-          <th>Department</th>
-          <th>Price</th>
-          <th>Unit</th>
-          <th>xFor</th>
-          <th>Cost</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>456</td>
-            <td>Test Item</td>
-            <td>6/13/18</td>
-            <td>4d</td>
-            <td>Produce</td>
-            <td>$1.00</td>
-            <td>Each</td>
-            <td>1</td>
-            <td>$0.10</td>
-        </tr>
-        <tr>
-            <td>456</td>
-            <td>Test Item</td>
-            <td>6/13/18</td>
-            <td>4d</td>
-            <td>Produce</td>
-            <td>$1.00</td>
-            <td>Each</td>
-            <td>1</td>
-            <td>$0.10</td>
-        </tr>
-        <tr>
-            <td>456</td>
-            <td>Test Item</td>
-            <td>6/13/18</td>
-            <td>4d</td>
-            <td>Produce</td>
-            <td>$1.00</td>
-            <td>Each</td>
-            <td>1</td>
-            <td>$0.10</td>
-        </tr>
-        <tr>
-            <td>456</td>
-            <td>Test Item</td>
-            <td>6/13/18</td>
-            <td>4d</td>
-            <td>Produce</td>
-            <td>$1.00</td>
-            <td>Each</td>
-            <td>1</td>
-            <td>$0.10</td>
-        </tr>
-        <tr>
-            <td>456</td>
-            <td>Test Item</td>
-            <td>6/13/18</td>
-            <td>4d</td>
-            <td>Produce</td>
-            <td>$1.00</td>
-            <td>Each</td>
-            <td>1</td>
-            <td>$0.10</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
+    <div id="results" class="results"></div>
+
   </div>
 
   <footer>
     Created by: Adan Rodriguez
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

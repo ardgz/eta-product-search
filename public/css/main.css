@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-color: #f9f9f7;
   font-family: Verdana, sans-serif;
+  margin-bottom: 79px;
 }
 
 header {
@@ -11,18 +12,15 @@ header {
   text-align: center;
   letter-spacing: .2rem;
   vertical-align: middle;
-  padding: 30px;
-  margin-bottom: 2em;
+  padding: 15px;
+  margin-bottom: 1em;
 }
 
 .container {
-  /* background-color: white; */
   margin: auto;
-  /* margin-top: 50px; */
   max-width: 960px;
-  /* width: 100%; */
-  padding-left: 1rem;
-  padding-right: 1rem;
+  position: relative;
+  padding: 0px 16px 77px;
   box-sizing: border-box;
 }
 
@@ -30,18 +28,71 @@ header {
   margin-bottom: 20px;
 }
 
-input {
+#searchQuery {
+  border: 0;
   width: 60%;
+  padding: 9px;
+  margin: 0px 8px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(84,87,93,0.20);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(84,87,93,0.20);
+  box-shadow: 0px 0px 5px 0px rgba(84,87,93,0.20);
+}
+
+#criteria {
+  border: 0;
+  padding: 8px;
+  margin: 0px 8px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(84,87,93,0.20);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(84,87,93,0.20);
+  box-shadow: 0px 0px 5px 0px rgba(84,87,93,0.20);
 }
 
 button {
   width: 10%;
+  padding: 9px;
+  margin: 0px 8px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #4f345a;
+  color: #fff9db;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(84,87,93,0.20);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(84,87,93,0.20);
+  box-shadow: 0px 0px 5px 0px rgba(84,87,93,0.20);
 }
 
-/* .results {} */
+button:hover{
+  background-color: #6f547a;
+}
+
+.results {
+  margin-bottom: 50px;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0px;
+  background-color: #f9f9f7;
+  font-size: 1.0rem;
+}
+
+tr:first-child {
+  background: #f04c6e;
+  color: #f9f9f7;
+}
+
+tr:first-child td {
+  font-weight: bold;
+  font-size: 1.0rem;
+}
+
+table tr:nth-child(even) {
+  background: #fff9db;
+}
+
+table tr {
+  font-size: 0.9rem;
 }
 
 table, th, td {
@@ -50,13 +101,21 @@ table, th, td {
   border: 1px solid black;
 }
 
+.noMatches {
+  margin: auto;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 50px;
+}
+
 footer {
   background-color: #54575d;
   color: white;
   text-align: center;
   font-size: 0.9rem;
-  padding: 30px;
-  position: absolute;
+  padding: 15px;
   width: 100%;
-  bottom: 0;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
 }
